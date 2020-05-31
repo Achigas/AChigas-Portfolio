@@ -196,7 +196,7 @@
 
       /* WORK STYLE */
 
-      .work-grid-wrapper {
+        .work-grid-wrapper {
         display: flex;
         width: 100%;
         justify-content: center;
@@ -204,26 +204,44 @@
 
        .work-grid-container {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        width: 80%;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        width: 100%;
         color: var(--primary-color);
         font-size: 1.2rem;
-        grid-gap: 10px;
-        background-color: darkblue;
+        grid-gap: 25px;
       }
 
       .work-grid-item {
         padding: 15px 0;
-        border: 2px solid var(--primary-color);
+        border: 2px dashed var(--primary-color);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: left;
       }
 
       .work-grid-item.main {
-          grid-column 2 / span 2;
+          grid-column: 1 / span 8;
+          grid-row: 1 / span 12;
+          background-image: url(../images/IMG_4002.JPG);
+          background-size: cover;
+          background-position: 80%;
+      }
+
+      .work-grid-item.addition {
+          grid-column: span 4;
+          grid-row: span 6;
+          background-image: url(../images/IMG_4002.JPG);
+          background-size: cover;
+          background-position: 40%;
+      }
+
+      .work-grid-item  h3 {
+          color: var(--primary-color);
+          font-size: 30px;
+          padding-right: 15px;
+          background-color: var(--secondary-color);
       }
 
       /* END WORK STYLE */
