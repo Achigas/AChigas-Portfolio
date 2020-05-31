@@ -7,7 +7,7 @@
   :root {
     --primary-color: rgb(6, 59, 119);
     --secondary-color: #bee5ff;
-    --tertiary-color: rgb(227, 241, 248);
+    --tertiary-color:rgba(255, 144, 212, 0.10);
   }
 
     body {
@@ -19,7 +19,7 @@
     /* HEADER STYLE START */
 
     header {
-        padding: 20px 35px;
+        padding: 20px 50px;
         display: flex;
         flex-wrap: wrap;
         top: 0;
@@ -29,7 +29,7 @@
         background-image: url("../images/data_1.jpg");
         background-size: cover;
         background-position: 80%;
-        background-attachment: fixed; 
+        background-attachment: fixed;
     }
 
     header h1 {
@@ -56,8 +56,7 @@
     }
 
     header nav {
-        margin: 7px 0;
-        align-content: center;
+        margin: 15px 0;
     }
 
     header nav ul {
@@ -70,7 +69,7 @@
 
     header nav ul li a {
         padding: 10px;
-        margin: 5px;
+        margin: 0 5px;
         font-weight: lighter;
         font-size: 2.0vw;
         text-shadow: 0 0 5px rgba(0,0,0, 0.5);
@@ -79,11 +78,10 @@
     }
 
     header nav ul li a:hover {
-        background: var(--primary-color);
+        background: var(--tertiary-color);
         color: var(--secondary-color);
         border-radius: 15px;
         text-shadow: none;
-        opacity: 0.5;
     }
 
     /* HEADER STYLE END */
@@ -92,24 +90,19 @@
 
     .hero {
         background-image: url("../images/data_1.JPG");
-        background-size: 10%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: flex-end;
         align-items: flex-end;
         background-attachment: fixed;
         background-size: cover;
         background-position: 80%;
     }
 
-    .hero img {
-        max-width: 25%;
+    .hero-img {
+        width: 35%;
         display: block;
-        padding: 5px 5px;
-        margin: 30px 0px 30px 50px;
-        border: 2px solid var(--primary-color);
-        opacity: 0.95;
-        border-radius: 15px;
     }
 
    .transparent-box {
@@ -118,17 +111,24 @@
         border: 2px solid var(--primary-color);
         opacity: 0.3;
         border-radius: 15px;
-      } 
+        margin: 0 50px 20px 10px;
+        width: 50%;
+        text-align: right;
+    }
 
-    .secondary {
-          margin-top: 25%;
-          margin-bottom: 25px;
-          margin-right: 25px;
-      }
+    .hero img {
+        max-width: 75%;
+        padding: 5px 5px;
+        margin: 0px 0px 30px 50px;
+        border: 2px solid var(--primary-color);
+        opacity: 1;
+        border-radius: 15px;
+    }
 
     .transparent-box h2 {
         font-style: italic;
-        font-size: 15px;
+        font-weight: bold;
+        font-size: 2.0vw;
         color: black;
         padding-right: 20px;
         
@@ -138,46 +138,37 @@
 
     /* SECTION TITLES */
 
-   /* .section-title {
-        font-size: 48px;
-        color: var(--primary-color);
-        border-right: 3px solid;
-        padding-bottom: 20px;
-        text-align: right;
-        margin: 0; */
-
 
     /* Title Style */
     .contents {
-        margin: 50px auto;
+        margin: 50px 10px;
         padding-bottom: 50px;
-        width: 80%;
+        width: 85%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        align-items: flex-start;
+        justify-content: space-around;
     }
 
        .contents h2 {
         color: var(--secondary-color);
-        border-right: 1px dashed var(--primary-color);
-        border-bottom: 1px dashed var(--primary-color);
         font-size: 30px;
-        flex: 1 20%;
-        font-size: 48px;
+        flex: 1 15%;
+        font-size: 34px;
         color: var(--primary-color);
-        padding-bottom: 50px;
-        padding-right: 20px;
         text-align: right;
       }  
 
       .content {
-        flex: 2 60%;
+        flex: 2 65%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-around;
         margin-left: 20px;
+        border-left: 1px dashed var(--primary-color);
+        padding-left: 20px;
       }
 
       /* End Title Style */
@@ -190,6 +181,7 @@
 
       .intro-text p {
           font-size: 20px;
+          line-height: 1.2;
       }
 
       /* ABOUT ME STYLE END */
@@ -216,32 +208,57 @@
         padding: 15px 0;
         border: 2px dashed var(--primary-color);
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+        align-items: flex-start;
+        justify-content: flex-start;
         text-align: left;
       }
 
       .work-grid-item.main {
           grid-column: 1 / span 8;
           grid-row: 1 / span 12;
-          background-image: url(../images/IMG_4002.JPG);
-          background-size: cover;
-          background-position: 80%;
       }
 
       .work-grid-item.addition {
           grid-column: span 4;
           grid-row: span 6;
-          background-image: url(../images/IMG_4002.JPG);
-          background-size: cover;
-          background-position: 40%;
+      }
+
+      .work1 {
+        background-image: url(../images/runbuddy.jpg);
+        background-size: cover;
+        background-position: 80%;
+      }
+
+      .work2 {
+        background-image: url(../images/Dog_2.jpg);
+        background-size: cover;
+        background-position: 80%;
+      }
+
+      .work3 {
+        background-image: url(../images/Mountain_2.jpg);
+        background-size: cover;
+        background-position: 80%;
+      }
+
+      .work4 {
+        background-image: url(../images/Walrus_1.jpg);
+        background-size: cover;
+        background-position: 80%;
+      }
+
+      .work5 {
+        background-image: url(../images/Dog_Window.jpeg);
+        background-size: cover;
+        background-position: 80%;
       }
 
       .work-grid-item  h3 {
           color: var(--primary-color);
-          font-size: 30px;
+          font-size: 2.5vw;
           padding-right: 15px;
           background-color: var(--secondary-color);
+          opacity: 0.75;
       }
 
       /* END WORK STYLE */
@@ -279,12 +296,3 @@
 
       /*CONTACT ME STYLE END */
 
-
-    /* UTILITY CLASSES DO WE NEED? */
-
-    .flex-column {
-        display: flex;
-        flex-direction: column;
-      }
-
-    /* UTILITY CLASSES */   
