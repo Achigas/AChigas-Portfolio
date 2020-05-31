@@ -42,7 +42,7 @@
         border-radius: 15px;
     }
 
-    /* header h1 a:hover {
+  /*  header h1 a:hover {
         background: var(--primary-color);
         color: var(--secondary-color);
         border-radius: 15px;
@@ -203,6 +203,10 @@
         font-size: 1.2rem;
         grid-gap: 25px;
       }
+      
+      .work-grid-container a {
+          text-decoration: none;
+      }
 
       .work-grid-item {
         padding: 15px 0;
@@ -211,6 +215,7 @@
         align-items: flex-start;
         justify-content: flex-start;
         text-align: left;
+        border-radius: 5px;
       }
 
       .work-grid-item.main {
@@ -221,7 +226,7 @@
       .work-grid-item.addition {
           grid-column: span 4;
           grid-row: span 8;
-      }
+      } 
 
       .work1 {
         background-image: url(../images/runbuddy.jpg);
@@ -291,7 +296,7 @@
         font-weight: lighter;
         font-size: 1.5vw;
         border: 2px dashed var(--primary-color);
-        border-radius: 15px;
+        border-radius: 10px;
     }
 
     .contact-info li:hover {
