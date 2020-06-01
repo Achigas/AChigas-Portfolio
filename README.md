@@ -17,7 +17,7 @@ The purpose of this project is to create an eye-catching portfolio to show to po
 [Alex Chigas' Portfolio](https://achigas.github.io/AChigas-Portfolio/)
 
 ## Screenshots
-![Screenshot of Portfolio](./assets/images/portfolioscreenshot.png)
+![Screenshot of Portfolio](./assets/images/webscreenshot.jpeg)
 
 ## Code
 HTML
