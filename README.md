@@ -3,6 +3,7 @@ Web development portfolio for Alex Chigas
 
 ## Table of contents
 * [General info](#general-info)
+* [URL](#URL)
 * [Screenshots](#screenshots)
 * [Code](#Code)
 * [Status](#status)
@@ -12,8 +13,11 @@ Web development portfolio for Alex Chigas
 ## General info
 The purpose of this project is to create an eye-catching portfolio to show to potential employers. 
 
+## URL 
+[Alex Chigas' Portfolio](https://achigas.github.io/AChigas-Portfolio/)
+
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Screenshot of Portfolio](./assets/images/portfolioscreenshot.png)
 
 ## Code
 HTML
