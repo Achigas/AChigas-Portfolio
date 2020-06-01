@@ -136,10 +136,9 @@
 
     /* HERO STYLE END */
 
-    /* SECTION TITLES */
 
+    /* SECTION STYLE */
 
-    /* Title Style */
     .contents {
         margin: 50px 10px;
         padding-bottom: 50px;
@@ -203,8 +202,20 @@
         font-size: 1.2rem;
         grid-gap: 25px;
       }
-      
+
       .work-grid-container a {
+        text-decoration: none;
+        grid-column: 1 / span 8;
+        grid-row: 1 / span 16;
+    }
+
+
+    .work-item {
+          color: var(--primary-color);
+          font-size: 1.2rem;
+      }
+
+    .work-item {
         padding: 15px 0;
         border: 2px dashed var(--primary-color);
         display: flex;
@@ -212,12 +223,11 @@
         justify-content: flex-start;
         text-align: left;
         position: relative;
-        border-radius: 5px;
-        text-decoration: none;
+        border-radius: 5px; 
       }
 
-      .work1 a::after {
-          background: linear-gradient(var(--primary-color), var(--tertiary-color));
+      .work-grid-item::after {
+          background: linear-gradient(var(--tertiary-color), rgba(195, 204, 223, 0.5));
           content: "";
           position: absolute;
           height: 100%;
@@ -225,10 +235,14 @@
           top: 0;
           left: 0;
           opacity: 0;
-          transition: all 1.0s;
+          transition: all 0.5s;
       }
 
-      .main {
+      .work-item:hover .work-grid-item::after {
+          opacity: 1;
+      }
+
+       .main {
         grid-column: 1 / span 8;
         grid-row: 1 / span 16;
     }
@@ -407,16 +421,22 @@
     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 
+    header h1 {
+        font-size: 30px;
+    }
+
     .contents {
         flex-direction: row;
         justify-content: center;
         align-content: flex-start;
         text-align: left;
+        margin: 10px;
     }
 
     .contents h2 {
         text-align: center;
         margin-bottom: 15px;
+        padding-right: 2px;
     }
 
     .content {
@@ -436,9 +456,26 @@
           margin-bottom: 5px;
       }
 
+      .intro-text p {
+          font-size: 10px;
+      }
+
       .work-grid-container {
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(14, 1fr);
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-gap: 15px;
+}
+         .main {
+        grid-column: 1 / span 10;
+        grid-row: 1 / span 4;
+}
+
+        .addition {
+         grid-column: span 5;
+         grid-row: span 4;
+  } 
+        .contact-info ul li {
+        margin: auto;
 }
 
 }
