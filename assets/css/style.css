@@ -424,7 +424,21 @@
         margin: auto;
       }
 
+      .transparent-box {
+          margin: 10px 5px;
+      }
+
+      .transparent-box h2 {
+          padding-right: 0;
+      }
+
+      .hero img {
+          margin-bottom: 5px;
+      }
+
       .work-grid-container {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(14, 1fr);
+}
+
 }
