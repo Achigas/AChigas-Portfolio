@@ -89,12 +89,12 @@
     /* HERO STYLE START */
 
     .hero {
-        background-image: url("../images/Dog_2.jpg");
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
+        background-image: url("../images/data_1.jpg");
         background-attachment: fixed;
         background-size: cover;
         background-position: 80%;
